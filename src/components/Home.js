@@ -59,8 +59,8 @@ const Home = () => {
                 Blockchain Txn Hash:{" "}
                 <a className = "font-bold underline" href={mumbai_polygonscan_url+response.txnHash} target="_blank" rel="noreferrer">{response.txnHash}</a>
                 </div>
-              <div className="text-sm mb-2">Blockchain Random Hash: {response.blockchainHash}</div>
-              <div className="text-sm mb-2">Server Seed: {response.serverSeed}</div>
+              <div className="text-sm mb-2"><text className='font-bold'>Blockchain Hash: </text>{response.blockchainHash}</div>
+              <div className="text-sm mb-2"><text className='font-bold'>Server Seed: </text>{response.serverSeed}</div>
               <div className="text-sm mb-2">
                 <Link to="/verifyResult" className='font-bold text-blue-800 underline'>Verify</Link>
               </div>
